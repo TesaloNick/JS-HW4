@@ -32,3 +32,12 @@ while (i <= 57) {
 document.write('Массив с помощью While: ', arr3_2, '<br>');
 console.log('Массив с помощью While: ',  arr3_2);
 document.write('Сумма всех элементов массива: ', sum, '<br>');
+
+document.write('<br>Задание 4. Числа из массива, которые начинаются на цифру 1, 2 или 5.<br>');
+const arr4 = ['10', '20', '30', '50', '235', '3000'];
+document.write('Числа: ');
+for (let i=0; i < arr4.length; i++) {
+    if ((arr4[i][0] == 1) || (arr4[i][0] == 2) || (arr4[i][0] == 5)) {
+        document.write(arr4[i] + ', ');
+    }
+}
