@@ -41,3 +41,16 @@ for (let i=0; i < arr4.length; i++) {
         document.write(arr4[i] + ', ');
     }
 }
+
+document.write('<br><br>Задание 5. Все дни недели.<br>');
+const arr5 = ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС']
+for (let i = 0; i < arr5.length; i++) {
+    if (i === (arr5.length-1) || i === (arr5.length-2)) {
+        document.write(arr5[i].bold() + ', ');
+        continue;
+    }
+    document.write(arr5[i] + ', ');
+}
+
+// let date = new Date(2021, 0, 3);  // 3 января 2012 года
+// alert( getWeekDay(date) );
