@@ -52,5 +52,8 @@ for (let i = 0; i < arr5.length; i++) {
     document.write(arr5[i] + ', ');
 }
 
-// let date = new Date(2021, 0, 3);  // 3 января 2012 года
-// alert( getWeekDay(date) );
+document.write('<br><br>Задание 6. Добавьте любой элемент и получите последний, используя свойство length.<br>');
+let arr6 = [1 ,3 ,56 ,7 ,'fdd' ,'c' ,[2, 'f']];
+arr6.push('lastElement');
+document.write('Последний элемент массива: ' + arr6[arr6.length-1] + '<br>');
+
