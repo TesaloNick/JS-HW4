@@ -57,3 +57,24 @@ let arr6 = [1 ,3 ,56 ,7 ,'fdd' ,'c' ,[2, 'f']];
 arr6.push('lastElement');
 document.write('Последний элемент массива: ' + arr6[arr6.length-1] + '<br>');
 
+document.write('<br>Задание 7. Все дни недели.<br>');
+let arr7 = [];
+for (let i = 0; i < Infinity; i++) {
+    arr7[i] = prompt('Введите числовой элемент массива (для разрыва просто нажмите "ОК"):');
+    if (isNaN(arr7[i])) {
+        alert('Вы ввели не число, попробуйте снова!');
+        arr7.splice(i,1);
+        i--;
+        continue;
+    }
+    if (arr7[i] === '') {
+        arr7.pop();
+        break;
+    }
+}
+
+document.write('Из введенных данных получился следующий массив: ', arr7, '<br>');
+arr7.sort(function(a,b) {
+    return a - b;
+})
+document.write('Отсортированный массив: ', arr7, '<br>');
