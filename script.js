@@ -92,6 +92,16 @@ while (i >= 0) {
 }
 document.write('Массив наоборот с помощью reverse: ', arr8_1, '<br>');
 document.write('Массив наоборот с помощью while: ', arr8_2_1, '<br>');
-
 console.log('Массив наоборот с помощью reverse: ', arr8_1);
 console.log('Массив наоборот с помощью while: ', arr8_2_1);
+
+document.write('<br>Задание 9. Подсчет количества нулевых (пустых) элементов в массиве.<br>');
+let arr9 = [5, 9, 21, , , 9, 78, , , , 6];
+let counter = 0;
+for (let i = 0; i < arr9.length; i++) {
+    if (arr9[i] == undefined) {
+        counter++;
+    }
+}
+document.write('Количество пустых элементов массива: ', counter, '<br>');
+
