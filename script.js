@@ -105,3 +105,24 @@ for (let i = 0; i < arr9.length; i++) {
 }
 document.write('Количество пустых элементов массива: ', counter, '<br>');
 
+document.write('<br>Задание 10. Сумма элементов массива [1,8,0,13,76,8,7,0,22,0,2,3,2] между двумя нулями.<br>');
+let arr10 = [1,8,0,13,76,8,7,0,22,0,2,3,2];
+sum = 0;
+j = 0;
+let arrNum = [] // массив с номерами нулей из массива arr10 = [1,8,0,13,76,8,7,0,22,0,2,3,2]
+for (let i = 0; i < arr10.length; i++) {
+    if (arr10[i] === 0) {
+        arrNum[j] = i;
+        j++;
+    }
+}
+let arrSum = [];
+console.log(arrNum);
+for (let i = 0; i < arrNum.length-1; i++) {
+    for (let n = +arrNum[i]; n <= +arrNum[i+1]; n++) {
+        sum  += +arr10[n]
+    }
+    document.write('Сумма между ', i, ' и ', i+1, ' нулями: ', sum, '.<br>');
+    sum = 0;
+}
+
