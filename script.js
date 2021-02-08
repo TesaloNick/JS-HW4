@@ -75,6 +75,8 @@ document.write('<br>Задание 7. Все дни недели.<br>');
 let arr7 = [];
 for (let i = 0; i < Infinity; i++) {
     arr7[i] = prompt('Задание 7. Введите числовой элемент массива (для разрыва просто нажмите "ОК"):');
+    // arr7.push(prompt('Задание 7. Введите числовой элемент массива (для разрыва просто нажмите "ОК"):')) - второй способ ввода
+
     if (isNaN(arr7[i])) {
         alert('Вы ввели не число, попробуйте снова!');
         arr7.splice(i,1);
@@ -149,6 +151,9 @@ for (let i = 0; i < arrNum.length-1; i++) {
 
 document.write('<br>Задание 11. Нарисовать равнобедренный треугольник.<br>');
 const rows = prompt('Задание 11. Введите количество столбцов: ', '5')
+// for(let i = 1; i <= (2*rows-1); i += 2) {
+//     document.write(new Array(i).fill('^').join(' '), '<br>' );       // - альтернативный способ
+// }
 document.write('<table>');
 for (let i = 0; i <= rows-1; i++) {         // строки
     document.write('<tr>');
